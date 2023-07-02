@@ -16,10 +16,10 @@ var meteo_error = false;
 var debug = false; //set true for debug output.
 var debug_response;
 
-var url_place_id = 'admannshagenbargeshagen-6547757'
-url_lat = '54.130038N';
-url_lon = '11.99915E';
-url_key = 'yp2hvns6i0nui8jwn416ehnsi1oh0ndm42ssww5p';
+//var url_place_id = 'admannshagenbargeshagen-6547757'
+//url_lat = '54.130038N';
+//url_lon = '11.99915E';
+//url_key = 'yp2hvns6i0nui8jwn416ehnsi1oh0ndm42ssww5p';
 
 http.createServer(function (req, res) {
     console.log("------------------------------------------------------------");
@@ -29,7 +29,7 @@ http.createServer(function (req, res) {
         //DEBUG
         if (debug) console.log("url parameter place_id:" + url_parts.query.place_id);
 
-        //var url_place_id = url_parts.query.place_id;
+        var url_place_id = url_parts.query.place_id;
 	
     }
     if (url_parts.query.lat && url_parts.query.lon) {
@@ -37,8 +37,8 @@ http.createServer(function (req, res) {
         if (debug) console.log("url parameter lat: " + url_parts.query.lat);
         if (debug) console.log("url parameter lon:" + url_parts.query.lon);
 
-        //url_lat = url_parts.query.lat;
-        //url_lon = url_parts.query.lon;
+        url_lat = url_parts.query.lat;
+        url_lon = url_parts.query.lon;
     }
     if (url_parts.query.key) {
         //DEBUG
