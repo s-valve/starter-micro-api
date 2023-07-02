@@ -1,7 +1,7 @@
 {
-  "name": "starter-micro-api",
+  "name": "astro_alert",
   "version": "1.0.0",
-  "description": "Cyclic.sh micro api starter",
+  "description": "TEXT asdsad",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,5 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "node-fetch": "2.0.0",
+    "request": "~2.30.0"
   }
 }
