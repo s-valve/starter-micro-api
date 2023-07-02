@@ -4,6 +4,8 @@
 //
 // see README.md
 
+//normal call: https://ruby-wide-eyed-sea-urchin.cyclic.app/?place_id=admannshagenbargeshagen-6547757&key=yp2hvns6i0nui8jwn416ehnsi1oh0ndm42ssww5p
+
 const fetch = require("node-fetch");
 
 var jsonData;
@@ -16,10 +18,10 @@ var meteo_error = false;
 var debug = false; //set true for debug output.
 var debug_response;
 
-//var url_place_id = 'admannshagenbargeshagen-6547757'
-//url_lat = '54.130038N';
-//url_lon = '11.99915E';
-//url_key = 'yp2hvns6i0nui8jwn416ehnsi1oh0ndm42ssww5p';
+var url_place_id = 'admannshagenbargeshagen-6547757'
+url_lat = '54.130038N';
+url_lon = '11.99915E';
+url_key = 'yp2hvns6i0nui8jwn416ehnsi1oh0ndm42ssww5p';
 
 http.createServer(function (req, res) {
     console.log("------------------------------------------------------------");
