@@ -4,3 +4,20 @@ http.createServer(function (req, res) {
     res.write('Yo!');
     res.end();
 }).listen(process.env.PORT || 3000);
+
+{
+    "clear_skies_periods": [
+        23,
+        23,
+        23,
+        23,
+        23,
+        23,
+        23,
+        23,
+        23,
+        23
+    ],
+    "clear_today": true,
+    "clear_tomorrow": false
+}
